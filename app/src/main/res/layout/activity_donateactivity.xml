@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".donateactivity">
+
+    <TextView
+        android:id="@+id/nameid"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="27dp"
+        android:text="NAME"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="269dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/nameid"
+        android:layout_marginEnd="8dp"
+        android:background="#faf7fa" />
+    <TextView
+        android:id="@+id/emailid"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="67dp"
+        android:inputType="textEmailAddress"
+        android:text="EMAIL"
+        android:textSize="18dp" />
+
+    <EditText
+        android:layout_width="271dp"
+        android:inputType=""
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/emailid"
+        android:layout_toEndOf="@+id/locationid"
+        android:background="#faf7fa" />
+
+    <TextView
+        android:id="@+id/locationid"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/nameid"
+        android:layout_marginTop="102dp"
+        android:text="LOCATION"
+        android:textSize="17dp" />
+
+    <EditText
+        android:layout_width="271dp"
+        android:inputType="text"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/locationid"
+        android:layout_toEndOf="@+id/locationid"
+        android:background="#faf7fa" />
+
+    <TextView
+        android:id="@+id/cityid"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/nameid"
+        android:layout_marginTop="140dp"
+        android:text="CITY"
+        android:textSize="17dp" />
+
+    <EditText
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cityid"
+        android:layout_toEndOf="@+id/locationid"
+        android:inputType="text"
+        android:background="#faf7fa" />
+
+    <TextView
+        android:id="@+id/pincodeid"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/nameid"
+        android:layout_marginTop="185dp"
+        android:text="PINCODE"
+        android:textSize="17dp" />
+
+    <EditText
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_alignTop="@+id/pincodeid"
+        android:layout_toEndOf="@+id/pincodeid"
+        android:background="#faf7fa" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="215dp"
+        android:background="#f29640"
+        android:text="SUBMIT" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="22dp"
+        android:autofillHints="NEEDS" />
+
+    <EditText
+        android:id="@+id/count1"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="242dp"
+        android:layout_marginEnd="46dp"
+        android:hint="count"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/spinner1"
+        android:layout_marginBottom="209dp"
+        android:autofillHints="NEEDS" />
+
+    <EditText
+        android:id="@+id/count2"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/count3"
+        android:layout_alignStart="@+id/count1"
+        android:hint="count"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/spinner1"
+        android:layout_marginBottom="161dp"
+        android:autofillHints="NEEDS" />
+
+    <EditText
+        android:id="@+id/count3"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/count1"
+        android:layout_marginBottom="152dp"
+        android:hint="count"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/spinner1"
+        android:layout_marginBottom="111dp"
+        android:autofillHints="NEEDS" />
+
+    <EditText
+        android:id="@+id/count4"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/count1"
+        android:layout_below="@+id/count3"
+        android:layout_marginTop="-152dp"
+        android:hint="count"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/spinner5"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/spinner1"
+        android:layout_marginBottom="57dp"
+        android:autofillHints="NEEDS" />
+
+    <EditText
+        android:id="@+id/count5"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner5"
+        android:layout_alignStart="@+id/count1"
+        android:hint="count"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/spinner6"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/spinner1"
+        android:layout_marginBottom="11dp"
+        android:autofillHints="NEEDS" />
+
+    <EditText
+        android:id="@+id/count6"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/count1"
+        android:layout_below="@+id/spinner5"
+        android:layout_marginTop="-57dp"
+        android:hint="count"
+        android:inputType="number" />
+
+
+</RelativeLayout>
